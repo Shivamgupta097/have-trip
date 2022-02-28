@@ -29,6 +29,7 @@ section img {
   filter: brightness(50%);
   max-height: 50%;
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 .search {

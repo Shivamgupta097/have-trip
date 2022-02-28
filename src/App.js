@@ -1,8 +1,11 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Recommended from "./Components/Recommended";
-import Footer from "./Components/Footer";
+import Navbar from "./components/navbar/navbar";
+import Hero from "./components/hero/Hero";
+import Recommended from "./components/recommended/Recommended";
+import Footer from "./components/footer/Footer";
+import Carousel from "./components/carousel/Carousel";
+// import Carousel from "./Components/Carousel";
+
 // import Recommended from "./Components/Recommended";
 
 function App() {
@@ -12,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <Recommended />
+      {/* <Carousel /> */}
       <Footer />
     </>
   );

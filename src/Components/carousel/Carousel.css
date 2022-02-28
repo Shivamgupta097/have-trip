@@ -1,0 +1,33 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  height: 900px;
+  margin: 5rem 0;
+  /* width: 100%; */
+}
+.image {
+  max-width: 1000px;
+  height: 70rem;
+  /* max-height: 300px; */
+  /* height: 80rem; */
+  /* /* overflow: hidden */
+}
+.carousel .left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  /* transform: translate(0, -50%); */
+  z-index: 10;
+}
+.carousel .right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  /* transform: translate(0, -50%); */
+  z-index: 10;
+}
