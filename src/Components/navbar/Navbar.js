@@ -1,5 +1,8 @@
 import React from "react";
 import "./Navbar.css";
+import { AiOutlineMenu } from "react-icons/ai";
+import { IoPersonCircleSharp } from "react-icons/io5";
+import { BsGlobe } from "react-icons/bs";
 
 export default function Navbar() {
   return (
@@ -21,7 +24,15 @@ export default function Navbar() {
             <a href="#recommended">Places</a>
           </li>
         </ul>
-        <button>Connect</button>
+        <div className="right">
+          <p>Become a host</p>
+          <BsGlobe id="globe" />
+
+          <div className="user">
+            <AiOutlineMenu />
+            <IoPersonCircleSharp id="person" />
+          </div>
+        </div>
       </nav>
     </>
   );

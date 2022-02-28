@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import searchImage from "../assets/images/search.jpg";
+import searchImage from "../../assets/images/search.jpg";
 
 export default function Hero() {
   return (

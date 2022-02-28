@@ -3,26 +3,60 @@ nav {
   justify-content: space-between;
   align-items: center;
   box-shadow: -2px 2px 2px grey;
-  padding: 1rem;
-}
+  padding: 0.87rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 
+  /* padding: 0 2rem; */
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 1rem;
+  gap: 1.85rem;
+  margin-right: 2.5rem;
+}
+nav .right p:hover {
+  background-color: #f9fbfdc5;
+  padding: 0.5rem;
+  border-radius: 2rem;
+
+  cursor: pointer;
+}
+.user {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  border: 1px solid rgba(128, 128, 128, 0.671);
+  border-radius: 1.3rem;
+  padding: 0.55rem;
+  cursor: pointer;
+  /* box-shadow: 1rem -1rem 6rem grey; */
+}
+#person {
+  color: grey;
+  /* margin-left: 1.3rem; */
+}
 .brand {
   color: rgb(255, 25, 25);
   font-size: 2.3rem;
   font-weight: bold;
   text-shadow: 0px 2px 10px green;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: 2.5rem;
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-li,
-a {
+nav ul li a {
   text-decoration: none;
   list-style: none;
   text-transform: uppercase;

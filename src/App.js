@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./components/navbar/navbar";
+import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import Recommended from "./components/recommended/Recommended";
 import Footer from "./components/footer/Footer";
-import Carousel from "./components/carousel/Carousel";
+// import Carousel from "./components/carousel/Carousel";
 // import Carousel from "./Components/Carousel";
 
 // import Recommended from "./Components/Recommended";

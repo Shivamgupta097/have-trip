@@ -1,0 +1,26 @@
+footer {
+  margin-top: 3rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(175, 118, 151);
+  font-size: 1.3rem;
+}
+
+.links,
+.social_links {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.85rem;
+  font-size: 1.5rem;
+}
+
+.links,
+.social_links:hover {
+  color: rgb(83, 22, 224);
+}

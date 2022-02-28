@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDom from "react-dom";
 import "./Recommended.css";
-import tajmahal from "../assets/images/tajmahal.jpg";
-import goldentemple from "../assets/images/goldentemple.jpg";
-import kerla from "../assets/images/kerla.jpg";
-import manali from "../assets/images/manali.jpg";
+import tajmahal from "../../assets/images/tajmahal.jpg";
+import goldentemple from "../../assets/images/goldentemple.jpg";
+import kerla from "../../assets/images/kerla.jpg";
+import manali from "../../assets/images/manali.jpg";
 
 export default function Recommended() {
   const data = [
