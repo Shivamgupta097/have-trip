@@ -1,7 +1,7 @@
 .destination {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 2rem;
+  column-gap: 2.75rem;
   margin: 0;
   width: 100%;
   cursor: pointer;
@@ -16,11 +16,12 @@
 }
 .destination_info {
   background-color: rgba(113, 135, 153, 0.295);
-  padding: 1.3rem 1rem 1rem 1rem;
-  border-radius: 1.3rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
   text-align: center;
-  box-shadow: 2px 2px 10px grey;
+  box-shadow: 0px -2px 10px grey;
   object-fit: cover;
+  transition: 100ms ease-in;
 }
 .destination_info > img {
   width: 300px;
@@ -34,7 +35,7 @@
 }
 
 .destination_info:hover {
-  background-color: rgba(113, 135, 153, 0.904);
+  /* background-color: rgba(113, 135, 153, 0.377); */
   /* transform: translate(); */
-  transform: translate(0.75rem, -1.2rem);
+  transform: scale(1.03);
 }

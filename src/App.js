@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "./components/navbar/Navbar";
-import Hero from "./components/hero/Hero";
-import Recommended from "./components/recommended/Recommended";
-import Footer from "./components/footer/Footer";
+
+import Home from "./pages/home/Home.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Destinations from "./pages/Destinations/Destinations.js";
+
 // import Carousel from "./components/carousel/Carousel";
 // import Carousel from "./Components/Carousel";
 
@@ -10,14 +11,13 @@ import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <>
-      {/* <ScrollToTop /> */}
-      <Navbar />
-      <Hero />
-      <Recommended />
-      {/* <Carousel /> */}
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/destinations" element={<Destinations />} />
+        {/* <Route path="services" element={<Destinations />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

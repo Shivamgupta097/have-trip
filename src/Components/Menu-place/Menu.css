@@ -1,0 +1,74 @@
+.menu-container {
+  margin: 0px 5% 0 20%;
+}
+
+.place-title {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+  margin: 1.5rem 1rem;
+
+  /* gap: 1rem; */
+}
+.place-title .location_icon {
+  font-size: 2rem;
+  color: #1cd152;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.place-title h1 {
+  /* margin-bottom: 2rem; */
+  font-weight: 1000;
+  letter-spacing: 1.5px;
+  font-size: 1.8rem;
+  color: rgb(190, 18, 47);
+  text-transform: uppercase;
+}
+.readmore-btn {
+  border: none;
+  color: red;
+  background-color: rgba(237, 215, 188, 1);
+}
+
+.menu-container .description {
+  padding: 0.85rem;
+  background-color: rgba(222, 184, 135, 0.555);
+  border-right: 2px solid rgb(79, 95, 109);
+  border-bottom: 2px solid rgb(79, 95, 109);
+  box-shadow: 3px -2px 4px rgb(47, 231, 255);
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+
+  border-radius: 0.55rem;
+}
+
+.card-container img {
+  width: 100%;
+  padding: 0;
+  /* margin-bottom: 0.1rem; */
+  /* margin: 0.2rem 1rem 0.25rem 1rem; */
+}
+.image_container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.55rem;
+}
+@media (max-width: 800px) {
+  .image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .place-title h1 {
+    font-size: 1rem;
+  }
+  .place-title .location_icon {
+    font-size: 1rem;
+    color: #138d0b;
+  }
+}

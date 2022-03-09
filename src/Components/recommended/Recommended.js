@@ -1,14 +1,16 @@
 import React from "react";
-import ReactDom from "react-dom";
+// import ReactDom from "react-dom";
 import "./Recommended.css";
 import tajmahal from "../../assets/images/tajmahal.jpg";
 import goldentemple from "../../assets/images/goldentemple.jpg";
 import kerla from "../../assets/images/kerla.jpg";
 import manali from "../../assets/images/manali.jpg";
+import { Link } from "react-router-dom";
 
 export default function Recommended() {
   const data = [
     {
+      id: 1,
       image: manali,
       title: "Manali",
       location: "Himachal Pardesh",
@@ -16,6 +18,7 @@ export default function Recommended() {
         " Manali and its mountains will never cease to fascinate you. The hill town has blossomed into a paradise for the wandering heart and it also has some cultural gems that are unique to this part of the world.",
     },
     {
+      id: 2,
       image: goldentemple,
       title: "Golden temple",
       location: "Amrtsar,Punjab",
@@ -23,6 +26,7 @@ export default function Recommended() {
         "Golden Temple is a seamless blend of jaw-dropping architecture, warm hospitality and captivating peace. It attracts devotees from different corners of the globe who seek blessing and spiritual solace.",
     },
     {
+      id: 3,
       image: kerla,
       title: "Kerla",
       location: "Kerla",
@@ -30,6 +34,7 @@ export default function Recommended() {
         "Popularly referred to as 'God's Own Country', Kerala in southwestern India is arguably one of the most beautiful states in the country. Home to colourful festivals, traditions, attires and sumptuous food",
     },
     {
+      id: 4,
       image: tajmahal,
       title: "Tajmahal",
       location: "Agra,U.P",
@@ -44,10 +49,12 @@ export default function Recommended() {
         <div className="destination">
           {data.map((destination) => {
             return (
-              <div className="destination_info">
-                <img src={destination.image} />
-                <h3>{destination.title}</h3>
-                <p>{destination.subTitle}</p>
+              <div className="destination_info" key={destination.id}>
+                <Link to="/Recommended">
+                  {<img src={destination.image} alt="not avalable" />}
+                  <h3>{destination.title}</h3>
+                  <p>{destination.subTitle}</p>
+                </Link>
               </div>
             );
           })}

@@ -1,35 +1,53 @@
 import React from "react";
 import { BsLinkedin, BsFacebook } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram, AiOutlineCopyrightCircle } from "react-icons/ai";
+import { FaTwitter } from "react-icons/fa";
 import "./Footer.css";
+// import {Link} from react-router-dom;
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <>
-      <footer>
-        <span>Copyright & copy;2022 ExTour.All right reserved</span>
-        <ul className="links">
+      <footer className="footer">
+        {/* <div className="justify-content-sm-center"> */}
+        <span className=" copy">
+          Travelz
+          <AiOutlineCopyrightCircle />
+          2022
+        </span>
+        <ul className="links_group ">
           <li>
-            <a href="#home">Home</a>
+            <Link to="/" className="link">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#service">Services</a>
+            <Link to="/service" className="link">
+              Services
+            </Link>
           </li>
           <li>
-            <a href="#recommended">Places</a>
+            <Link to="/destinations" className="link">
+              Destinations
+            </Link>
           </li>
         </ul>
         <ul className="social_links">
           <li>
-            <BsLinkedin />
+            <BsLinkedin className="link" />
           </li>
           <li>
-            <BsFacebook />
+            <BsFacebook className="link" />
           </li>
           <li>
-            <AiFillInstagram />
+            <AiFillInstagram className="link" />
+          </li>
+          <li>
+            <FaTwitter className="link" />
           </li>
         </ul>
+        {/* </div> */}
       </footer>
     </>
   );
